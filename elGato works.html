@@ -71,7 +71,7 @@
       height: 15px;
       width: 3px;
       margin: auto;
-      top: -30%;
+      top: -22%;
       left: 0;
       bottom: 0;
       right: 0;
@@ -141,7 +141,7 @@
       const minute = now.getMinutes();
       const second = now.getSeconds();
 
-      const hourAngle = (hour % 4) * 30 + minute / 2;
+    const hourAngle = (hour % 12) * 30 + (minute / 60) * 30;
       const minuteAngle = minute * 6 + second / 10;
       const secondAngle = second * 6;
 
